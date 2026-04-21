@@ -4,4 +4,5 @@ return {
     { import = "curry.plugins.git" },
     { import = "curry.plugins.help" },
     { import = "curry.plugins.lsp" },
+    { import = "curry.plugins.editor" },
 }
