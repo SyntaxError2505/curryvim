@@ -1,0 +1,34 @@
+# Curryvim
+**This Section is for people who already decided to use curryvim. If you need arguments please read [What is curryvim](#what-is-curryvim)**
+## Getting Started
+All you need is an install of Neovim on either: MacOS, Linux or Windows via WSL. It might as well work natively on windows but will not be tested or cared for.
+Git is also needed to get the repo onto your system. If not possible for whatever reason, download as zip, unzip and move into ~/.config/nvim
+### Install
+Install the `neovim` package trough brew or your distros package manager. Neovim >0.11 is recommended. If not possible, consider building it from source.  
+```any good shell
+# Save a potential neovim installation
+mv ~/.config/nvim ~/.config/nvim_bak
+mkdir ~/.config/nvim
+cd ~/.config/nvim
+# clone repo and start neovim
+git clone https://github.com/SyntaxError2505/curryvim.git
+nvim
+```
+If everything worked, you should see the editor with a lazy pop-up, listing and installing plugins  
+#### Note
+Maybe there are some errors at startup. Those may be caused by plugins that are referencing dependencies, that are not yet installed. Wait till everything is installed and restart neovim. If the error persists -> Open an issue in github
+### Dependencies
+- Build or install lazygit for the in-editor-tui to work.
+- Also some plugins may require standard build-systems like `make`. Make sure, that it is installed.
+## Usage
+### LSPs
+Use the :Mason command to install, manage and query Lsps, linters or DAPs. At this point, only LSPs are supported. Your editor will run and configure them automatically. Some do require the build tools, of the languages they are written in.
+### Git
+Press Space + l + g to open lazygit. It is a tui interface for your git repo. In it, you can press ? to get a list of keybindings.
+### Filetree
+Press Space + b to open neotree. Press ? inside to get a list of keybindings.
+### Which-key
+If you press `<leader>`, which is configured to be the space key in normal mode, after some time you will get a pop up, that shows possible combinations of keys. This is a good resource to learn curryvim.
+### Windows (Not the OS)
+## What is curryvim
+## Why curryvim
