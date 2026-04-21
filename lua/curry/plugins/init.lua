@@ -1,4 +1,4 @@
 return {
     { import = "curry.plugins.files" },
-    { import = "curry.plugins.colors" }
+    { import = "curry.plugins.visuals" }
 }
