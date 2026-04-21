@@ -23,6 +23,8 @@ Maybe there are some errors at startup. Those may be caused by plugins that are 
 ## Usage
 ### LSPs
 Use the :Mason command to install, manage and query Lsps, linters or DAPs. At this point, only LSPs are supported. Your editor will run and configure them automatically. Some do require the build tools, of the languages they are written in.
+#### Completion and Snippets
+Curryvim uses blink.cmp for completion. It is known to be fast and simple to set up and configure. It is designed in a "super-tab" configuration -> Tab accepts the completion like in e.g. vscode. The cursor is automatically placed at the first argument/input of the completed symbol. A "Snippet" is created. You can start editing the first input and use Ctrl+L to jump to the next one and Ctrl+J to go back. Snippets are a quick way to efficiently call symbols without having to type out everything.
 ### Git
 Press Space + l + g to open lazygit. It is a tui interface for your git repo. In it, you can press ? to get a list of keybindings.
 ### Filetree
