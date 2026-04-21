@@ -19,5 +19,5 @@ vim.keymap.set({"i", "s"}, "<C-E>", function()
 end, {silent = true})
 
 -- Windows
-vim.keymap.set("n", "<leader>sv", ":vs<cr>", {silent = true, desc = "open vertical window"})
-vim.keymap.set("n", "<leader>sh", ":vs<cr>", {silent = true, desc = "open horizontal window"})
+vim.keymap.set("n", "<leader>v", ":vs<cr>", {silent = true, desc = "open vertical window"})
+vim.keymap.set("n", "<leader>h", ":sp<cr>", {silent = true, desc = "open horizontal window"})
