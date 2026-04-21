@@ -1,8 +1,4 @@
-
 return {
-  -- Your other plugins...
-
-  {
     "ydkulks/cursor-dark.nvim",
     lazy = false,
     priority = 1000,
@@ -12,10 +8,9 @@ return {
         -- For theme
         style = "dark",
         -- For a transparent background
-        transparent = true,
+        transparent = false,
         -- If you have dashboard-nvim plugin installed
         dashboard = true,
       })
     end,
-  },
 }
