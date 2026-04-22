@@ -32,6 +32,6 @@ Press Space + b to open neotree. Press ? inside to get a list of keybindings.
 ### Which-key
 If you press `<leader>`, which is configured to be the space key in normal mode, after some time you will get a pop up, that shows possible combinations of keys. This is a good resource to learn curryvim.
 ### Windows (Not the OS)
-Windows in neovim are like windows in emacs or splits in vscode. They are seperate editors with their own content. You can look at them like a tiling window manager on linux. Just open an editor, press <leader> (space) and press v for a vertical split and h for a horizontal one. It will clone the file that is currently open. You can select another one using fff or the filetree. The filetree supports opening new windows by hovering over a file and pressing s or S. You can switch between windows using Ctrl+W + w or the mouse.
+Windows in neovim are like windows in emacs or splits in vscode. They are seperate editors with their own content. You can look at them like a tiling window manager on linux. Just open an editor, press <leader> (space) and press v for a vertical split and h for a horizontal one. It will clone the file that is currently open. You can select another one using fff or the filetree. The filetree supports opening new windows by hovering over a file and pressing s or S. You can switch between windows using Ctrl+W + [hjkl] or the mouse.
 ## What is curryvim
 ## Why curryvim
