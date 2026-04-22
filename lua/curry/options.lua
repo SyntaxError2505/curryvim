@@ -1,5 +1,5 @@
 -- Colorscheme
-vim.cmd.colorscheme("cursor-dark")
+vim.cmd.colorscheme("catppuccin-nvim")
 
 -- Tabs
 vim.o.expandtab = true

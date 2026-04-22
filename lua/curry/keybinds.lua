@@ -21,3 +21,10 @@ end, {silent = true})
 -- Windows
 vim.keymap.set("n", "<leader>v", ":vs<cr>", {silent = true, desc = "open vertical window"})
 vim.keymap.set("n", "<leader>h", ":sp<cr>", {silent = true, desc = "open horizontal window"})
+
+-- Tabs
+vim.keymap.set("n", "<leader>tt", ":tabnew<CR>", { desc = "open new tab", silent = true})
+vim.keymap.set("n", "<leader>tn", ":tabnext<CR>", { desc = "switch to next tab", silent = true})
+vim.keymap.set("n", "<leader>tp", ":tabprev<CR>", { desc = "switch to previous tab", silent = true})
+vim.keymap.set("n", "<leader>tc", ":tabc<CR>", { desc = "close current tab", silent = true})
+vim.keymap.set("n", "<leader>to", ":tabo<CR>", { desc = "close all tabs", silent = true})
