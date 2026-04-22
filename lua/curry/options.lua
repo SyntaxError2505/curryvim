@@ -10,3 +10,17 @@ vim.o.softtabstop = 4
 -- Line-numbers
 vim.o.number = true
 vim.o.relativenumber = true
+
+-- LSP
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = true,
+  severity_sort = true,
+  float = {
+    border = 'rounded',
+    source = 'always',
+  },
+})
+
