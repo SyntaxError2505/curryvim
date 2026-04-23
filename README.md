@@ -37,7 +37,7 @@ FFF is a performance focused file-switcher/fuzzy-finder for neovim. Press Space 
 ### Which-key
 If you press `<leader>`, which is configured to be the space key in normal mode, after some time you will get a pop up, that shows possible combinations of keys. This is a good resource to learn curryvim.
 ### Windows (Not the OS)
-Windows in neovim are like windows in emacs or splits in vscode. They are seperate editors with their own content. You can look at them like a tiling window manager on linux. Just open an editor, press <leader> (space) and press v for a vertical split and h for a horizontal one. It will clone the file that is currently open. You can select another one using fff or the filetree. The filetree supports opening new windows by hovering over a file and pressing s or S. You can switch between windows using Ctrl+W + [hjkl] or the mouse.
+Windows in neovim are like windows in emacs or splits in vscode. They are seperate editors with their own content. You can look at them like a tiling window manager on linux. Just open an editor, press <leader> (space) and press v for a vertical split and h for a horizontal one. It will clone the file that is currently open. You can select anotnher one using fff or the filetree. The filetree supports opening new windows by hovering over a file and pressing s or S. You can switch between windows using Ctrl+W + [hjkl] or the mouse.
 ### Tabs
 Tabs in neovim are not bound to a file/buffer/window. They store a layout of windows and what they are displaying. At this time, curryvim does not use a plugin to extand
 that capability. It does introduce some keybindings tho. If only one tab is present, there is no tabbar. These replace the commands that you would be using to manage tabs with easy to remember keybindings, all starting with Space + t.  
@@ -51,4 +51,29 @@ Space + t +:
 
 Use tabs to quickly change between different jobs that you do not need on the same screen or to remove visual clutter trough multiple [windows](#windows-not-the-os)
 ## What is curryvim
+### What it is not
+It is not a text-editor. It is a configuration for the scripting-oriented text-editor Neovim. It is based of the legendary Vim and improves in performance, features and of 
+course scriptaility. It adds the embeddable scripting language on top which allows for plugins or distros. Even if it is not vimscript anymore, building a config in lua 
+is a lot of work, especially if plugins and their dependencies change and break. It IS a layer of abstraction that allows you to use neovims easy and fast editing, 
+modern features like lsps and not break everything just for trying to update a dependency.
+
+It is also not AI focused, only AI ready (let me explain). It does not include agents or even llm-driven tab completions. Not (only) because I have some
+strong opionions on clankers and basing your workflow on them. I have tried adding some AI-functionality but paid accounts and tool-choice
+would make this unusable for people who do not like the deprecation of supermaven or do not pay for github copilot. AI Ready means, that you can use a cli 
+tool like the recently open-source (not if you ask anthropic) claude code or the actally open source opencode using wrapper-plugins or the real thing using a multiplexer 
+like tmux or ghosttys/kittys panes/tabs. In this context, it mostly means that you do not need to quit the terminal to vibe code your apps.
+
+### Random comparisons to (really cool and respectable) "competitors"
+I find my choice of workflow to be close to nv-chads. Both chose to be lightweight and allow for parallel editing using like tabs and splits.  
+On the other side of the Spectrum there is LazyVim. One could say that I made this distro in spite of it's workflow. Or at least how a friend was using it.
+> Like VSCode
+
+Not much to say, I think this way is faster, especially if you are editing multiple files at the same time.
+
 ## Why curryvim
+Let me list some arguments:
+- Expendable (Fork it and add your own. It is designed to do that)
+- Light (I did not wanna set up a dashboard, faster loading times baby!)
+- Fast (Workflow that is not bound by an IDE. If you wanna use VSCode in the cli, then go somewhere else. The actual neovim experience)
+- Support (As long as there are not to many users, I can personally read and fix issues)
+- The CLI (Neovim runs in the Terminal, this makes it easy to use with: Agents, Multiplexers, CLI-project-management e.g. Vite and the TTY)
