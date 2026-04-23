@@ -40,13 +40,15 @@ If you press `<leader>`, which is configured to be the space key in normal mode,
 Windows in neovim are like windows in emacs or splits in vscode. They are seperate editors with their own content. You can look at them like a tiling window manager on linux. Just open an editor, press <leader> (space) and press v for a vertical split and h for a horizontal one. It will clone the file that is currently open. You can select another one using fff or the filetree. The filetree supports opening new windows by hovering over a file and pressing s or S. You can switch between windows using Ctrl+W + [hjkl] or the mouse.
 ### Tabs
 Tabs in neovim are not bound to a file/buffer/window. They store a layout of windows and what they are displaying. At this time, curryvim does not use a plugin to extand
-that capability. It does introduce some keybindings tho. If only one tab is present, there is no tabbar. These replace the commands that you would be using to manage tabs with easy to remember keybindings, all starting with <leader>+t.
-<leader>+t+:
+that capability. It does introduce some keybindings tho. If only one tab is present, there is no tabbar. These replace the commands that you would be using to manage tabs with easy to remember keybindings, all starting with Space + t.  
+Space + t +:
 - t: Create a new tab
 - c: Close current tab
 - n: switch to next tab
 - p: switch to previous tab
-- o: Close all tabs (Window layout gets stored in current tab but tabbar disappears)  
+- o: Close all tabs (Window layout gets stored in current tab but tabbar disappears)
+> As always, [which-key](#which-key) will give you help along the way
+
 Use tabs to quickly change between different jobs that you do not need on the same screen or to remove visual clutter trough multiple [windows](#windows-not-the-os)
 ## What is curryvim
 ## Why curryvim
