@@ -10,13 +10,13 @@ Please include important information like:
 - Error messages
 - Screenshots
 - What you did to fix it
-- Any custom changes/plugins
+- Any custom changes/plugins  
 I and potential maintainers will try to fix and close it if it is reproducable and worth it.
 > Most issues are worth it but if it is e.g. not compatible with your own plugin, maybe it is your job to fix it
 
 ## Your first contribution
 If you wanna contribute, make sure that you:
-- Are using curryvim
+- Are using curryvim  
 If you wanna add a plugin, you can do it on your local version of the config. If you think, that it will benefit other users -> Open an issue for discussing it.  
 If you have your own plugin, it is the same, even if it is more probable to be taken into the config as long as you are ready to maintain it with curryvim in mind.
 ## Where to ask
