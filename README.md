@@ -8,10 +8,8 @@ Install the `neovim` package trough brew or your distros package manager. Neovim
 ```any good shell
 # Save a potential neovim installation
 mv ~/.config/nvim ~/.config/nvim_bak
-mkdir ~/.config/nvim
-cd ~/.config/nvim
 # clone repo and start neovim
-git clone https://github.com/SyntaxError2505/curryvim.git
+git clone https://github.com/SyntaxError2505/curryvim.git ~/.config/nvim
 nvim
 ```
 If everything worked, you should see the editor with a lazy pop-up, listing and installing plugins  
