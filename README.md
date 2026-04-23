@@ -29,7 +29,7 @@ Press Space + l + g to open lazygit. It is a tui interface for your git repo. In
 ### Filetree
 Press Space + b to open neotree. Press ? inside to get a list of keybindings.
 ### FFF grepping
-FFF is a performance focused file-switcher/fuzzy-finder for neovim. Press Space + f to get the possible commands from [which-key](which-key). It replaces alternatives like telescope (feature rich and simple), fzf ( requires external tui, easy to use ) or the standard `/` (Only one file, hard to use, native). I chose it mostly because its creator was nice to me while advertising it on twitter :) Also it is pretty fast. It supports:
+FFF is a performance focused file-switcher/fuzzy-finder for neovim. Press Space + f to get the possible commands from [which-key](#which-key). It replaces alternatives like telescope (feature rich and simple), fzf ( requires external tui, easy to use ) or the standard `/` (Only one file, hard to use, native). I chose it mostly because its creator was nice to me while advertising it on twitter :) Also it is pretty fast. It supports:
 - Searching for File Names
 - String-searching for text
 - Typo-resistant fuzzy-searching for text
