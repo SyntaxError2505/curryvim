@@ -20,7 +20,8 @@ Maybe there are some errors at startup. Those may be caused by plugins that are 
 - Also some plugins may require standard build-systems like `make`. Make sure, that it is installed.
 ## Usage
 ### LSPs
-Use the :Mason command to install, manage and query Lsps, linters or DAPs. At this point, only LSPs are supported. Your editor will run and configure them automatically. Some do require the build tools, of the languages they are written in.
+Use the :Mason command to install, manage and query Lsps, linters or DAPs. At this point, only LSPs are supported. Your editor will run and configure them automatically. Some do require the build tools, of the languages they are written in.  
+Also, trough mason-lspconfig -> You can call `:LspInstall` in a file and it will list the possible LSPs for it's filetype. This is usefull for when you do not wanna search Mason, just to edit a file. Lspconfig will automatically use a community-managed config for any LSP, those may contain errors. Configuring LSPs manually is possible but requires a lot of expertise. It is better to ask/leave an issue in the lsp-config repo. Just don't tell them, that I sent you :)
 #### Completion and Snippets
 Curryvim uses blink.cmp for completion. It is known to be fast and simple to set up and configure. It is designed in a "super-tab" configuration -> Tab accepts the completion like in e.g. vscode. The cursor is automatically placed at the first argument/input of the completed symbol. A "Snippet" is created. You can start editing the first input and use Ctrl+L to jump to the next one and Ctrl+J to go back. Snippets are a quick way to efficiently call symbols without having to type out everything.
 ### Git
