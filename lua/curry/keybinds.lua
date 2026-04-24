@@ -28,3 +28,7 @@ vim.keymap.set("n", "<leader>tn", ":tabnext<CR>", { desc = "switch to next tab",
 vim.keymap.set("n", "<leader>tp", ":tabprev<CR>", { desc = "switch to previous tab", silent = true})
 vim.keymap.set("n", "<leader>tc", ":tabc<CR>", { desc = "close current tab", silent = true})
 vim.keymap.set("n", "<leader>to", ":tabo<CR>", { desc = "close all tabs", silent = true})
+
+-- Terminal
+-- Make Escape quit the terminal because standard is really stupid
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], {noremap = true, desc="Exit --terminal-- mode"})
