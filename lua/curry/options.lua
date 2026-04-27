@@ -11,6 +11,9 @@ vim.o.softtabstop = 4
 vim.o.number = true
 vim.o.relativenumber = true
 
+-- Scroll buffer
+vim.o.scrolloff = 8
+
 -- LSP
 vim.diagnostic.config({
     virtual_text = true,
