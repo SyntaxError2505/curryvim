@@ -19,6 +19,9 @@ Maybe there are some errors at startup. Those may be caused by plugins that are 
 - Build or install lazygit for the in-editor-tui to work.
 - Also some plugins may require standard build-systems like `make`. Make sure, that it is installed.
 ## Usage
+### Which-key
+This is the first thing you need to learn. If you press space, after some time you will get a pop up that shows possible combinations of keys. Normally we use a system of 2 keys. Number one e.g. f for file search and Number 2, e.g. g for grepping text. Only the second ones have a describtion. This allows to clear up space in the which-key menu and helps you remember things that you need every day. Currently only space+v/h/b (Panes and File tree) don't have a key before, as an extra section is not needed when you only have one or two operations.
+Which-key is a good resource to learn curryvim as every keybind we or neovim add, has a describiton you can read inside.
 ### LSPs
 Use the :Mason command to install, manage and query Lsps, linters or DAPs. At this point, only LSPs are supported. Your editor will run and configure them automatically. Some do require the build tools, of the languages they are written in.  
 Also, trough mason-lspconfig -> You can call `:LspInstall` in a file and it will list the possible LSPs for it's filetype. This is usefull for when you do not wanna search Mason, just to edit a file. Lspconfig will automatically use a community-managed config for any LSP, those may contain errors. Configuring LSPs manually is possible but requires a lot of expertise. It is better to ask/leave an issue in the lsp-config repo. Just don't tell them, that I sent you :)
@@ -34,8 +37,6 @@ FFF is a performance focused file-switcher/fuzzy-finder for neovim. Press Space 
 - String-searching for text
 - Typo-resistant fuzzy-searching for text
 - Searching for the word your cursor is on ( Using LSP is better for this purpose if you are hovering over a symbol )
-### Which-key
-If you press `<leader>`, which is configured to be the space key in normal mode, after some time you will get a pop up, that shows possible combinations of keys. This is a good resource to learn curryvim.
 ### Windows (Not the OS)
 Windows in neovim are like windows in emacs or splits in vscode. They are seperate editors with their own content. You can look at them like a tiling window manager on linux. Just open an editor, press <leader> (space) and press v for a vertical split and h for a horizontal one. It will clone the file that is currently open. You can select anotnher one using fff or the filetree. The filetree supports opening new windows by hovering over a file and pressing s or S. You can switch between windows using Ctrl+W + [hjkl] or the mouse.
 ### Tabs
@@ -53,15 +54,13 @@ Use tabs to quickly change between different jobs that you do not need on the sa
 ## What is curryvim
 ### What it is not
 It is not a text-editor. It is a configuration for the scripting-oriented text-editor Neovim. It is based of the legendary Vim and improves in performance, features and of 
-course scriptaility. It adds the embeddable scripting language on top which allows for plugins or distros. Even if it is not vimscript anymore, building a config in lua 
-is a lot of work, especially if plugins and their dependencies change and break. It IS a layer of abstraction that allows you to use neovims easy and fast editing, 
-modern features like lsps and not break everything just for trying to update a dependency.
+course scriptaility. It adds the embeddable scripting language lua on top which allows for creating plugins or distros. Even if it is not vimscript anymore, building a config in lua is a lot of work, especially if plugins and their dependencies change and break. It IS a layer of abstraction that allows you to use neovims easy and fast editing, modern features like Language Servers and not break everything just for trying to update a dependency.
 
 It is also not AI focused, only AI ready (let me explain). It does not include agents or even llm-driven tab completions. Not (only) because I have some
 strong opionions on clankers and basing your workflow on them. I have tried adding some AI-functionality but paid accounts and tool-choice
 would make this unusable for people who do not like the deprecation of supermaven or do not pay for github copilot. AI Ready means, that you can use a cli 
 tool like the recently open-source (not if you ask anthropic) claude code or the actally open source opencode using wrapper-plugins or the real thing using a multiplexer 
-like tmux or ghosttys/kittys panes/tabs. In this context, it mostly means that you do not need to quit the terminal to vibe code your apps.
+like tmux or ghosttys/kittys panes/tabs (you can also use the integrated terminal but it is a little bit clunky). In this context, it mostly means that you do not need to quit the terminal to vibe code your apps.
 
 ### Random comparisons to (really cool and respectable) "competitors"
 I find my choice of workflow to be close to nv-chads. Both chose to be lightweight and allow for parallel editing using like tabs and splits.  
