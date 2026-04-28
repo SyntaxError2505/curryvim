@@ -71,7 +71,7 @@ Not much to say, I think this way is faster, especially if you are editing multi
 
 ## Why curryvim
 Let me list some arguments:
-- Expendable (Fork it and add your own. It is designed to do that)
+- Expandable (Fork it and add your own. It is designed to do that)
 - Light (I did not wanna set up a dashboard, faster loading times baby!)
 - Fast (Workflow that is not bound by an IDE. If you wanna use VSCode in the cli, then go somewhere else. The actual neovim experience)
 - Support (As long as there are not to many users, I can personally read and fix issues)
