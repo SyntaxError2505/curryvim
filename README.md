@@ -41,7 +41,7 @@ FFF is a performance focused file-switcher/fuzzy-finder for neovim. Press Space 
 Windows in neovim are like windows in emacs or splits in vscode. They are seperate editors with their own content. You can look at them like a tiling window manager on linux. Just open an editor, press <leader> (space) and press v for a vertical split and h for a horizontal one. It will clone the file that is currently open. You can select anotnher one using fff or the filetree. The filetree supports opening new windows by hovering over a file and pressing s or S. You can switch between windows using Ctrl+W + [hjkl] or the mouse.
 ### Tabs
 Tabs in neovim are not bound to a file/buffer/window. They store a layout of windows and what they are displaying. At this time, curryvim does not use a plugin to extand
-that capability. It does introduce some keybindings tho. If only one tab is present, there is no tabbar. These replace the commands that you would be using to manage tabs with easy to remember keybindings, all starting with Space + t.  
+that capability. It does introduce some keybindings tho. These replace the commands that you would be using to manage tabs with easy to remember keybindings, all starting with Space + t.
 Space + t +:
 - t: Create a new tab
 - c: Close current tab
