@@ -18,6 +18,7 @@ Maybe there are some errors at startup. Those may be caused by plugins that are 
 ### Dependencies
 - Build or install lazygit for the in-editor-tui to work.
 - Also some plugins may require standard build-systems like `make`. Make sure, that it is installed.
+- A nerd-font is required to render some specific icons like filetypes. I recommend JetBrainsMono Nerd Font, which is downloadable from their site as it adds merged characters `e.g. => looks like an arrow` and looks really good. Any font you pick from their site will work
 ## Usage
 ### Which-key
 This is the first thing you need to learn. If you press space, after some time you will get a pop up that shows possible combinations of keys. Normally we use a system of 2 keys. Number one e.g. f for file search and Number 2, e.g. g for grepping text. Only the second ones have a describtion. This allows to clear up space in the which-key menu and helps you remember things that you need every day. Currently only space+v/h/b (Panes and File tree) don't have a key before, as an extra section is not needed when you only have one or two operations.
