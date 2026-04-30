@@ -1,7 +1,10 @@
 -- Colorscheme
 vim.cmd.colorscheme("catppuccin-nvim")
 
--- Tabs
+-- Clipboard
+vim.cmd("set clipboard+=unnamedplus")
+
+-- Tabs (Tab-key)
 vim.o.expandtab = true
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
