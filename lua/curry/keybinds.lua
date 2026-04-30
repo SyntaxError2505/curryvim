@@ -32,3 +32,9 @@ vim.keymap.set("n", "<leader>to", ":tabo<CR>", { desc = "close all tabs", silent
 -- Terminal
 -- Make Escape quit the terminal because standard is really stupid
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], {noremap = true, desc="Exit --terminal-- mode"})
+
+-- LSP
+vim.keymap.set('n', '<leader>gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { desc = "go to definition", silent = true })
+vim.keymap.set('n', '<leader>gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', { desc = "go to declaration", silent = true })
+vim.keymap.set('n', '<leader>gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', { desc = "go to implementation", silent = true })
+vim.keymap.set('n', '<leader>K',  '<cmd>lua vim.lsp.buf.hover()<CR>', { desc = "hover over symbol", silent = true })
