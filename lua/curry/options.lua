@@ -2,7 +2,7 @@
 vim.cmd.colorscheme("catppuccin-nvim")
 
 -- Clipboard
-vim.cmd("set clipboard+=unnamedplus")
+vim.o.clipboard = "unnamedplus"
 
 -- Tabs (Tab-key)
 vim.o.expandtab = true
