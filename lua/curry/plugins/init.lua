@@ -5,4 +5,5 @@ return {
     { import = "curry.plugins.help" },
     { import = "curry.plugins.lsp" },
     { import = "curry.plugins.editor" },
+    { import = "curry.plugins.debugger"}
 }
