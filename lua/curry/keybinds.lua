@@ -39,3 +39,11 @@ vim.keymap.set('n', '<leader>gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', { de
 vim.keymap.set('n', '<leader>gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', { desc = "go to implementation", silent = true })
 vim.keymap.set('n', '<leader>K',  '<cmd>lua vim.lsp.buf.hover()<CR>', { desc = "hover over symbol", silent = true })
 vim.keymap.set('n', '<leader>gr',  '<cmd>lua vim.lsp.buf.rename()<CR>', { desc = "rename hovered symbol", silent = true })
+
+-- Dap
+vim.keymap.set("n", "<leader>dn", ":DapNew<CR>", { desc = "New Dap Session", silent = true})
+vim.keymap.set("n", "<leader>dc", ":DapContinue<CR>", { desc = "DapContinue Dap Session", silent = true})
+vim.keymap.set("n", "<leader>db", ":DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint", silent = true})
+vim.keymap.set("n", "<leader>do", ":DapStepOver<CR>", { desc = "Step over", silent = true})
+vim.keymap.set("n", "<leader>di", ":DapStepInto<CR>", { desc = "Step into", silent = true})
+vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Toggle ui", silent = true})
