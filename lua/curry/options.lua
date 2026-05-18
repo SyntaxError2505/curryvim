@@ -1,5 +1,5 @@
 -- Colorscheme
-vim.cmd.colorscheme("catppuccin-nvim")
+vim.cmd.colorscheme("gruvbox")
 
 -- Clipboard
 vim.o.clipboard = "unnamedplus"
