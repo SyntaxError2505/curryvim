@@ -31,7 +31,7 @@ vim.keymap.set("n", "<leader>to", ":tabo<CR>", { desc = "close all tabs", silent
 
 -- Terminal
 -- Make Escape quit the terminal because standard is really stupid
-vim.keymap.set('t', '<C-Esc>', [[<C-\><C-n>]], {noremap = true, desc="Exit --terminal-- mode"})
+vim.keymap.set('t', '<C-i>', [[<C-\><C-n>]], {noremap = true, desc="Exit --terminal-- mode"})
 
 -- LSP
 vim.keymap.set('n', '<leader>gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { desc = "go to definition", silent = true })
