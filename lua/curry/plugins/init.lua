@@ -6,5 +6,5 @@ return {
     { import = "curry.plugins.lsp" },
     { import = "curry.plugins.editor" },
     { import = "curry.plugins.debugger"},
-    { import = "curry.plugins.private"},
+--    { import = "curry.plugins.private"},
 }
