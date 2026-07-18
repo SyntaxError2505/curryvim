@@ -13,6 +13,7 @@ git clone https://github.com/SyntaxError2505/curryvim.git ~/.config/nvim
 nvim
 ```
 If everything worked, you should see the editor with a lazy pop-up, listing and installing plugins  
+Also, if plugins fail to install, this could be github doing github things. Please press Shift + I to try installing again. If even after a few tries they don't work. Submit an issue with an error/screenshot  
 #### Note
 Maybe there are some errors at startup. Those may be caused by plugins that are referencing dependencies, that are not yet installed. Wait till everything is installed and restart neovim. If the error persists -> Open an issue in github
 ### Dependencies
