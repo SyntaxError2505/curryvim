@@ -1,5 +1,5 @@
 -- Colorscheme
-vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("catppuccin")
 
 -- Clipboard
 vim.o.clipboard = "unnamedplus"
@@ -16,6 +16,9 @@ vim.o.relativenumber = true
 
 -- Scroll buffer
 vim.o.scrolloff = 8
+
+-- Autoread (let neovim update buffer when file is changed)
+vim.o.autoread = true
 
 -- LSP
 vim.diagnostic.config({
